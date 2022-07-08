@@ -1,3 +1,110 @@
-//====================================================================================================
+.footer {
+    background-color: #121212;
+    min-height: 380px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 40px;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 60px;
+    }
+    &__contact {
+        display: grid;
+        gap: 20px;
+    }
+    &__logo {
+        width: 225px;
+    }
+    &__email-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__email-wrapper img {
+        color: white;
+    }
+    &__email {
+        color:white;
+        font-size: 16px;
+        font-weight:400;
+    }
+    &__location-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__location-wrapper img {
 
-//====================================================================================================
+    }
+    &__location {
+        color: white;
+        font-size: 16px;
+        font-weight:400;
+    }
+    &__copy {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__links {
+        display: flex;
+        gap: 160px;
+    }
+    &__pages-title {
+    }
+    &__pages-link {
+    }
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 16px;
+    }
+    &__links-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__product-title {
+    }
+    &__product-link {
+    }
+    &__follow {
+    }
+    &__follow-title {
+    }
+    &__picture {
+        display: flex;
+        gap: 32px;
+    }
+    &__icon {
+    }
+}
+.icon-facebook {
+}
+.icon-twitter {
+}
+.icon-instagram {
+}
+.footer__link-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFEFE;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+@media (max-width:1200px) {
+    .footer__links {
+        gap: 100px;
+    }
+}
+@media (max-width:1024px) {
+    .footer__container {
+        padding: 80px 15px;
+    }
+    .footer__links {
+        gap: 40px;
+    }
+}

@@ -15,10 +15,20 @@
 .btn-white-orange {
     color: white;
     background-color: #FF6428;
+    transition: all 0.2s linear;
+}
+.btn-white-orange:hover {
+    color: white;
+    background-color: #d15726;
 }
 .btn-black-white {
     color: black;
     background-color: white;
+    transition: all 0.2s linear;
+}
+.btn-black-white:hover {
+    color: black;
+    background-color: rgb(228, 228, 228);
 }
 .title {
     font-size: 44px;
@@ -85,13 +95,13 @@
 }
 
 
-// SECTION HOME 01 =======================
+// SECTION STORE 02 ======================
 .store {
-    
     margin-top: 850px;
+    padding-bottom: 200px;
     &__container {
         position: relative;
-        padding-top: 100px;
+        padding-top: 200px;
     }
     &__logo {
         position: absolute;
@@ -109,10 +119,11 @@
     }
 }
 .newboard {
-    margin-bottom: 280px;
+    margin-bottom: 85px;
     &__head {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 35px;
     }
     &__title {
         font-size: 20px;
@@ -120,65 +131,68 @@
         letter-spacing: 3px;
         text-transform: uppercase;
     }
-    &__sub-title {
+    &__title-more {
         font-size: 20px;
         font-weight: 500;
         color: #868686;
+    }
+    &__title-more:hover {
+        color: #5a5a5a;
     }
     &__cards {
     }
 }
 .card {
     display: flex;
-    
     gap: 20px;
-    
     &__body {
         position: relative;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-
-
         width: 100%;
         max-width: 376px;
         height: 100%;
         min-height: 295px;
-
         padding: 15px 15px 0 15px;
         background-color: white;
         border-radius: 10px;
-        transition: all 0.3s linear;
+        box-shadow: 0px 0px 25px 4px rgb(0 0 0 / 25%);
     }
     &__body:hover .card__icon {
-        opacity: 1;
+        display: block;
     }
     &__body:hover .card__footer {
-        opacity: 1;
         display: flex;
     }
     &__body a {
         display: block;
     }
     &__link {
-        
     }
     &__descrp {
         padding-top: 10px;
     }
     &__icon {
-        opacity: 0;
+        display: none;
         position: absolute;
         top: 19px;
         right: 25px;
-        // display: block;
+        animation-name: icon-anim;
+        animation-duration: 0.2s;
+    }
+    @keyframes icon-anim {
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
     &__icon-wrapper {
-
-   
     }
     &__img {
        width: 100%;
+       transition: all 0.7s linear;
+    }
+    &__img:hover {
+        transform: scale(1.03);
     }
     &__title {
         font-size: 16px;
@@ -189,26 +203,34 @@
     &__price {
         font-weight: 1400;
         color: #666666;
-        
     }
     &__footer {
-        opacity: 0;
+        display: none;
     }
 }
-
 .card-btn {    
         position: absolute;
         bottom: -62px;
         left: 0;   
-
-        
         justify-content: space-between;
         align-items: center;
-
         width: 376px;
         padding: 10px;
         background-color: #F0F0F0;
         border-radius: 0 0 10px 10px;
+        box-shadow: 0px 9px 25px 4px rgb(0 0 0 / 25%);
+        animation-name: card-btn-anim;
+        animation-duration: 0.3s;
+    @keyframes card-btn-anim {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     &__cart {
         padding: 12px 42px;
     }
@@ -229,36 +251,357 @@
         letter-spacing: 3px;
         text-transform: uppercase;
     }
-    &__sub-title {
+    &__title-more {
         font-size: 20px;
         font-weight: 500;
         color: #868686;
+    }
+    &__title-more:hover {
+        color: #5a5a5a;
     }
     &__cards {
     }
 }
 
 
-// SECTION STORE 02 ======================
-
-
-
 // SECTION CATEGORIES 03 =================
-
+.categories {
+    padding-bottom: 200px;
+    &__container {
+        text-align: center;
+    }
+    &__title {
+        padding-bottom: 70px;
+    }
+    &__title span {
+        color: #FF6428;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 10px;
+    }
+}
+.categories-card {
+    &__body {
+        position: relative;
+        width: 220px;
+        height: 280px;
+        border-radius: 20px;
+    }
+    &__link {
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        transition: all 0.5s linear;
+    }
+    &__img:hover {
+        transform: scale(1.05);
+    }
+    &__dscrp {
+        position: absolute;
+        bottom:30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
 
 
 // SECTION BRANDS 04 =====================
-
+.brands {
+    padding-bottom: 200px;
+    &__container {
+        text-align: center;
+    }
+    &__title {
+        padding-bottom: 75px;
+    }
+    &__title span {
+        color: #FF6428;
+    }
+    &__body {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__img {
+        
+    }
+}
 
 
 // SECTION TRYAPP 05 =====================
-
+.tryapp {
+        position: relative;
+        height: 750px;
+        background-color: rgba(0, 0, 0, 0.79);
+    &__backgr {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150%;
+        z-index: -1;
+    }
+    &__container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1170px;
+    }
+    &__title {
+        text-align: center;
+        padding-top: 200px;
+        color: white;
+    }
+    &__title span {
+        color: #FF6428;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 120px;
+    }
+    &__block {
+    }
+}
+.tryapp-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__wrapper {
+        width: 72px;
+        padding-bottom: 40px;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+    }
+    &__text {
+        width: 230px;
+        color: #666666;
+        font-weight: 400;
+        line-height: 21px;
+    }
+}
 
 
 // SECTION TESTIMONIALS 01 ===============
-
+.testimonials {
+    padding-top: 200px;
+    padding-bottom: 240px;
+    &__container {
+    }
+    &__title {
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    &__title span {
+        color: #FF6428;
+    }
+    &__slider {
+    }
+    &__wrapper {
+    }
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__img-wrapper {
+        width: 100%;
+        max-width: 407px;
+        height: 100%;
+        max-height: 341px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    &__descrp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 524px;
+        min-height: 285px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        color: #666666;
+        padding-bottom: 25px;
+    }
+    &__position-block {
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 24px;
+        color: black;
+        padding-bottom: 19px;
+    }
+    &__profession {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #868686;
+    }
+}
 
 
 // SECTION APPSTORE 01 ===================
+.appstore {
+    padding-bottom: 220px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__downld {
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 67px;
+        padding-bottom: 40px;
+    }
+    &__title span {
+        color: #FF6428;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__link {
+        cursor: pointer;
+    }
+    &__gstrore {
+    }
+    &__appstrore {
+    }
+    &__img-wrapper {
+        width: 100%;
+        max-width: 568px;
+        height: 100%;
+        max-height: 533px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
 
+@media (max-width:1600px) {
+    .tryapp__backgr {
+        width: 300%;
+    }
+}
 
+@media (max-width:1200px) {
+    .home__backgr {
+        width: 270%;
+    }
+    .card {
+        display: flex;
+		&__body {
+            display: flex;
+            padding: 0;
+		}
+        &__body:hover .card__icon {
+            display: none;
+        }
+		&__icon {
+            display: none;
+		}
+		&__img {
+            padding: 35px 15px 30px;
+		}
+		&__descrp {
+            padding: 0 15px;
+		}
+    }
+    .card-btn {
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        bottom: -15px;
+        width: 100%;
+        animation: none;
+    }
+}
+
+@media (max-width:1024px) {
+    .home {
+        &__backgr {
+        width: 270%;
+        left:30%;
+        }
+        &__body {
+            top: 0px;
+        }
+    }
+    .store {
+        margin-top: 600px;
+    }
+    .testimonials {
+        &__slide  {
+            column-gap: 20px;
+        }
+    }
+    .appstore {
+        &__title{
+            max-width: 450px;
+            font-size: 40px;
+            line-height: 1.5;
+        }
+        &__buttons {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+}
+@media (max-width:1024px) {
+    .testimonials__img {
+        max-width: 350px;
+    }
+    .appstore {
+        &__title{
+            max-width: 450px;
+            font-size: 34px;
+            line-height: 1.3;
+        }
+       
+    }
+    .categories-card {
+        &__dscrp {
+            bottom: 65px;
+        }
+    }
+}
