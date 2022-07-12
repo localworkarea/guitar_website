@@ -44,7 +44,7 @@ flsFunctions.spollers();
 /*
 Модуль работы с табами
 Документация: https://template.fls.guru/template-docs/modul-taby.html
-Сниппет (HTML): tabs
+Снипет (HTML): tabs
 */
 flsFunctions.tabs();
 

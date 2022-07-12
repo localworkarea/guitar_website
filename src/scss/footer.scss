@@ -118,3 +118,22 @@
         }
     }
 }
+@media (max-width:479.98px) {
+    .footer__container {
+        position: relative;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 30px;
+    }
+    .footer__contacts {
+        
+        gap: 30px;
+    }
+    .footer__copy {
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+    }
+}

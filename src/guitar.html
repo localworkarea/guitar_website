@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Guitar website"
+})
+
+<body>
+    <div class="wrapper">
+
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="guitar">
+                <div class="guitar__container">
+                    <div class="guitar__more-about">
+                        <div class="more-about__gallery-wrapper">
+                            <div data-gallery class="more-about__gallery gallery">
+                                <a href="@img/details/guitar-main-big.png" class="gallery__image gallery__image-first">
+                                    <img src="@img/details/guitar-main-small.png" alt="preview" class="gallery__preview gallery__preview-first">
+                                </a>
+                                <a href="@img/details/guitar-2-big.png" class="gallery__image">
+                                    <img src="@img/details/guitar-2-small.png" alt="preview" class="gallery__preview">
+                                </a>
+                                <a href="@img/details/guitar-3-big.png" class="gallery__image">
+                                    <img src="@img/details/guitar-3-small.png" alt="preview" class="gallery__preview">
+                                </a>
+                                <a href="@img/details/guitar-4-big.png" class="gallery__image">
+                                    <img src="@img/details/guitar-4-small.png" alt="preview" class="gallery__preview">
+                                </a>
+                            </div>
+                            <img class="more-about__logo-site" src="@img/details/logo-site-icon_white.png" alt="">
+                        </div>
+                        <div class="more-about__detail">
+                            <div class="detail__descrp">
+                                <h2 class="detail__title">The Essential Les Paul</h2>
+                                <div class="detail__sub-title">
+                                    <p class="sub-title__item">Electrical guitar</p>
+                                    <img class="sub-title__img-stars" src="@img/details/icons-star.png" alt="">
+                                    <p class="sub-title__likes">(49)</p>
+                                </div>
+                                <p class="detail__price">$1,299.00</p>
+                                <p class="detail__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                                    type and scrambled it to make a type specimen book. </p>
+                                <div class="detail__buttons">
+                                    <a data-popup="#popup" href="#" class="detail__btn btn btn-white-orange">Add to cart</a>
+                                    <a data-popup="#popup" href="#" class="detail__btn btn btn-black-white btn-secondary-media">Add to watchlist</a>
+                                </div>
+                            </div>
+                            <div class="detail__benefits-icon">
+                                <img class="benefits-icon__img" src="@img/details/icon-free.png" alt="">
+                                <img class="benefits-icon__img" src="@img/details/icon-setup.png" alt="">
+                                <img class="benefits-icon__img" src="@img/details/icon-warranty.png" alt="">
+                                <img class="benefits-icon__img" src="@img/details/icon-case.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guitar__features">
+                        <h2 class="features__title">Features</h2>
+                        <div class="features__wrapper">
+                            <div class="features__descrp">
+                                <h3 class="features__sub-title">A Tribute to the King</h3>
+                                <p class="features__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="span-color">Lorem Ipsum has been the industry's standard</span> dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            </div>
+                            <div class="features__image">
+                                <img class="features__image-item" src="@img/details/guitar-3-big.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guitar__specification">
+                        <h2 class="specification__title">Specification</h2>
+                        <div class="specification__wrapper">
+                            <div class="specification__image">
+                                <img class="specification__image-item" src="@img/details/guitar-4-big.png" alt="">
+                            </div>
+                            <div class="specification__descrp">
+                                <h3 class="specification__sub-title">A Tribute to the King</h3>
+                                <p class="specification__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="span-color">Lorem Ipsum has been the industry's standard</span> dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="specification__tabl">
+                                    <h4 class="tabl__title">Body</h4>
+                                    <ul class="tabl__block">
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Body Shape</p>
+                                            <p class=" tabl__line-text">ES-355</p>
+                                        </li>
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Body Material</p>
+                                            <p class=" tabl__line-text">3-Ply Figured Maple/Poplar/Maple</p>
+                                        </li>
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Top</p>
+                                            <p class=" tabl__line-text">3-Ply Figured Maple/Poplar/Maple</p>
+                                        </li>
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Back</p>
+                                            <p class=" tabl__line-text">3-Ply Figured Maple/Poplar/Maple</p>
+                                        </li>
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Side</p>
+                                            <p class=" tabl__line-text">3-Ply Figured Maple/Poplar/Maple</p>
+                                        </li>
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Centerblock</p>
+                                            <p class=" tabl__line-text">Maple</p>
+                                        </li>
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Binding</p>
+                                            <p class=" tabl__line-text">7-ply Top, 3-ply Back, 5-ply</p>
+                                        </li>
+                                        <li class="tabl__line">
+                                            <p class="tabl__line-text column-bold"">Finish</p>
+                                            <p class=" tabl__line-text">Gloss Nitrocellulose Lacquer</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guitar__video">
+                        <h2 class="video__title">Video about</h2>
+                        <iframe width="" height="" src="https://www.youtube.com/embed/GtLj10qf2DY?start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="tryapp">
+                <img class="tryapp__backgr" src="@img/05_try-backgr.png" alt="">
+                <div class="tryapp__container">
+                    <h2 class="tryapp__title title">Why try <span>Rhythm?</span></h2>
+                    <div class="tryapp__body">
+                        <div class="tryapp__block tryapp-descr">
+                            <div class="tryapp-descr__wrapper"><img class="tryapp-descr__img" src="@img/05_try-icon-1.png" alt=""></div>
+                            <p class="tryapp-descr__title">Smooth Browsing</p>
+                            <p class="tryapp-descr__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="tryapp__block tryapp-descr">
+                            <div class="tryapp-descr__wrapper"><img class="tryapp-descr__img" src="@img/05_try-icon-2.png" alt=""></div>
+                            <p class="tryapp-descr__title">EASY Delivery </p>
+                            <p class="tryapp-descr__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="tryapp__block tryapp-descr">
+                            <div class="tryapp-descr__wrapper"><img class="tryapp-descr__img" src="@img/05_try-icon-3.png" alt=""></div>
+                            <p class="tryapp-descr__title">SwiFT PAYMENTS</p>
+                            <p class="tryapp-descr__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="appstore backgr-color">
+                <div class="appstore__container">
+                    <div class="appstore__downld">
+                        <h2 class="appstore__title title">Browse and buy your <span>favorite guitars</span> with Rhythm.</h2>
+                        <div class="appstore__buttons">
+                            <a class="appstore__link" href="https://play.google.com/store/games" target="_blank"><img class="appstore__gstrore" src="@img/07_appstore-btn.png" alt=""></a>
+                            <a class="appstore__link" href="https://www.apple.com/app-store/" target="_blank"><img class="appstore__appstrore" src="@img/07_appstore-btn-apple.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="appstore__img-wrapper">
+                        <img class="appstore__img" src="@img/07_appstore-img.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
